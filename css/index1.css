@@ -1,0 +1,461 @@
+@import url('https://webfontworld.github.io/jeju/JejuGothic.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  height: 100%;
+}
+/* 반응형 햄버거 */
+.hamburger{
+  display: none;
+}
+.ham{
+  display: none;
+}
+#ham{
+  display: none;
+}
+/* 퀵메뉴 */
+.quick_menu{
+  font-family: 'JejuGothic';
+  position: relative;
+  background-color: #fff;
+  top: 37%;
+  z-index: 50;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  right: 40px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 16px;
+  text-align: center;
+  width: 131px;
+  height: 430px;
+}
+.quick_menu a{
+  color: #000;
+}
+.quick_menu a:hover{
+
+  color: #0773B0;
+}
+.quick_menu a:hover img{
+  margin-right: 10px;
+}
+.quick_menu div:first-child{
+  box-shadow: -2px 6px 11px #868686;
+  top: -34px;
+  position: absolute;
+  line-height: 2;
+  border-radius: 25px 25px 0 0;
+  background-color: #D9D9D9;
+  width: inherit;
+  height: 38px;
+}
+.quick_menu div:last-child{
+  bottom: -34px;
+  position: absolute;
+  box-shadow: -2px -5px 11px #868686;
+  background-color: #D9D9D9;
+  width: inherit;
+  height: 38px;
+  border-radius: 0 0 30px 30px;
+}
+.quick_menu a{ display: inline-block;
+}
+.quick_menu a img{
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+.quick_menu a p{}
+section{
+  margin: auto;
+  width: 100%;
+}
+.inner {width: 1400px;
+margin: auto;}
+/* 로그인 서브메뉴 부분 */
+.hg{
+  margin: 100px 0;
+  padding-top: 100px;
+  text-align: center;
+  height: 1300px;
+}
+.log_in{
+  margin: 100px 0;
+  padding-top: 100px;
+  text-align: center;
+  height: 1000px;
+}
+.log_in h2{
+  text-shadow: 5px 5px 2px #116aac;
+  font-size: 80px;
+  margin: auto;
+}
+
+.log_in form p .text_id{
+  margin: 70px 0 10px 0;
+  padding-left: 20px;
+  width: 340px;
+  font-size: 25px;
+  height: 60px;
+}
+.log_in form p .text_pass{
+  margin: 10px;
+  padding-left: 20px;
+  width: 340px;
+  font-size: 25px;
+  height: 60px;
+}
+.log_in form p label{
+  line-height: 3;
+  font-size: 25px;
+  margin-right: 188px;
+}
+.log_in form p label input{
+  width: 30px;
+  height: 30px;
+  transform: translate(0px, 5px);
+}
+.btn_log button{
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 4px 4px 5px #116aac;
+  background-color: #F9C153;
+  margin: 20px;
+  width: 360px;
+  height: 50px;
+}
+.m_link{
+  margin: auto;
+  width: 336px;
+  justify-content: space-between;
+  display: flex;
+}
+.m_link a{
+  position: relative;
+  color: #000;
+  font-size: 18px;
+}
+.m_link a:not(:last-child)::before{
+  content: "";
+  right: -15px;
+  top: 8px;
+  background: #000;
+  position: absolute;
+  width: 1px;
+  height: 15px;
+}
+.m_link a:hover{
+  color: #0773B0;
+}
+.m_link a:last-child{
+  margin: 0;
+}
+
+.sns_link a {
+  color: #808080;
+  font-size: 18px;
+  line-height: 3.4;
+  margin: 50px auto 20px auto;
+  display: block;
+  width: 300px;
+  height: 60px;
+  border: 1px solid green;
+}
+.sns_link2 a{
+  color: #808080;
+  font-size: 20px;
+  line-height: 3;
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  height: 60px;
+  border: 1px solid #fee500;
+}
+
+.sns_link2 a img,
+.sns_link a img{
+  object-fit: cover;
+  float: left;
+  width: 60px;
+  height: inherit;
+}
+
+/* 회원가입부분 */
+.hg{}
+.hg h2{
+  color: #000000;
+  text-shadow: 10px 10px 5px #F9C153;
+  font-size: 50px;
+  margin: 0px 334px 20px 0;
+}
+.hg>p{
+  margin-right: 222px;
+}
+.hg form{
+  width: 100%;
+  margin: 50px auto;
+}
+.hg form h3{
+  margin: 15px auto;
+  padding-right: 387px;
+  width: 200px;
+  font-size: 15px;
+}
+.hg .hg_btn{
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  background-color: #F9C153;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #53daf1;
+}
+.hg form p input{
+  padding-left: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  width: 380px;
+  height: 50px;
+}
+.hg form p .xor1{
+  width: 280px;
+}
+.hg form p .xor2,
+.hg form p .xor3{
+  width: 100px;
+}
+.hg form p #hg_s{
+  width: 124px;
+  border-radius: 5px;
+  margin-left: 3px;
+  height: 50px;
+}
+.hg_bb{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+  height: 50px;
+}
+.hg_bb .hg_btn1{
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px #53daf1;
+  height: inherit;
+  background-color: #F9C153;
+  color: #fff;
+  border-radius: 5px;
+}
+.hg_bb .hg_btn2{
+  box-shadow: 2px 2px 2px #53daf1;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  height: inherit;
+  background-color: #0773B0;
+  color: #fff;
+  border-radius: 5px;
+}
+/** header */
+.header{
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.header .inner{
+  width: 100%;
+  height: inherit;
+}
+.header .inner .logo{
+  width: 200px;
+  height: 80px;
+}.header .inner .logo img{
+  width: inherit;
+  height: inherit;
+}
+.header .inner .menu_inner{
+  width: 100%;
+  height:150px;
+  display: flex;
+    align-items: center;
+  background-color: #F9C153;
+}
+.header .inner .menu_bar{
+  width: 1400px;
+  font-size: 50px;
+  margin: auto;
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.header .inner .menu{
+  white-space: nowrap;
+  background-color: #232E5C;
+  border-radius: 8px;
+  font-size: 25px;
+  width: 800px;
+  height: 100px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .inner .menu li a{  
+  font-family: 'JejuGothic';
+  display: block;
+  color:#fff;}
+.header .inner .menu li a:hover{
+  transition:0.3s ;
+   padding-bottom: 15px;
+  color: red;
+}
+
+.header .inner .header2{
+  white-space: nowrap;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 242px;
+  height: 94px;
+}
+.header .inner .header2 a{
+  color: #fff;
+}
+.header .inner .header2 a:hover{
+  color: #0773B0;
+}
+.header .inner .header2 a:hover img{
+  padding-bottom: 15px;
+}
+.header .inner .header2 #sc{
+}
+.header .inner .header2 #sc img{
+  transform: translate(15px,6px);
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+.search_bar{
+  transition: 3s;
+  display:none;
+  top: 0;
+  width: 1400px;
+  height: 150px;
+  color: #fff;
+  background-color: #232E5C;
+  position: absolute;
+}
+.search_bar p{
+  font-size: 47px;
+  transform: translate(52px, 36px);
+}
+.search_bar span{
+  cursor: pointer;
+  border: 1px solid #000;
+  transform: translate(0px,-56px);
+  float: right;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+}
+.search_bar span nav:nth-child(1)
+{
+  margin-top: 20px;
+  transform: rotate(45deg);
+  width: 44px;
+  height: 5px;
+  background-color: #000000;
+}
+.search_bar span nav:nth-child(2)
+{margin-top: -5px;
+  transform: rotate(-48deg);
+  width: 45px;
+  height: 5px;
+  background-color: #020000;
+}
+.search_bar input {
+  transform: translate(47%, -42%);
+  padding-left: 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 758px;
+  height: 80px;
+  margin: 0;
+}
+.search_bar a{
+  position: absolute;
+  right: 19%;
+  top: 26%;
+  width: 47px;
+  height: 47px;}
+
+.search_bar a img{
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/* footer */
+.footer{
+  float: bottom;
+  height: 500px;
+  background-color: #232E5C;
+}
+.footer .inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: inherit;
+}
+.footer .inner .left{
+}
+.footer .inner .left img{
+  width: 312px;
+  height: 101px;
+}
+.footer .inner .right{
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between ;
+  color: #fff;
+width: 1200px;
+  height: 288px;
+}
+.footer .inner .right .u1{
+  font-size: 25px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .inner .right .u2{
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .inner .right .u2 li:last-child{
+  margin-top: 55px;
+}
+.footer .inner .right ul li a{
+  color: #fff;
+}

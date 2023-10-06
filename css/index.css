@@ -1,0 +1,1321 @@
+@import url('https://webfontworld.github.io/jeju/JejuGothic.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* 반응형 햄버거 */
+.hamburger{
+  display: none;
+}
+.ham{
+  display: none;
+}
+#ham{
+  display: none;
+}
+/* 클릭시 배경이 회색  */
+/* .back_gd{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 20%;
+  position: absolute;
+  z-index:3;
+} */
+/* 퀵메뉴 */
+.quick_menu{
+  font-family: 'JejuGothic';
+  position: relative;
+  background-color: #fff;
+  top: 37%;
+  z-index: 50;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  right: 15px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 16px;
+  text-align: center;
+  width: 131px;
+  height: 430px;
+}
+.quick_menu a{
+  color: #000;
+}
+.quick_menu a:hover{
+
+  color: #0773B0;
+}
+.quick_menu a:hover img{
+  margin-right: 10px;
+}
+.quick_menu div:first-child{
+  box-shadow: -2px 2px 9px #868686;
+  top: -34px;
+  position: absolute;
+  line-height: 2;
+  border-radius: 25px 25px 0 0;
+  background-color: #D9D9D9;
+  width: inherit;
+  height: 35px;
+}
+.quick_menu div:last-child{
+  bottom: -34px;
+  position: absolute;
+  box-shadow: -2px -2px 9px #868686;
+  background-color: #D9D9D9;
+  width: inherit;
+  height: 35px;
+  border-radius: 0 0 30px 30px;
+}
+.quick_menu a{ display: inline-block;
+}
+.quick_menu a img{
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+.quick_menu a p{}
+.btn_more {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color:  #232E5C;
+  transition: 0.5s;
+  right: 82px;
+  top: 12.4rem;
+}
+.bbttnn{
+  display:none;
+}
+
+/* 이미지 */
+.btn_more::before {
+  position: absolute;
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/more_plus.png) no-repeat;
+  filter: invert(100);
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+/* 뒤에 실선 */
+.btn_more::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #232E5C;
+  transition: 0.5s;
+  left: -10px;
+  top: -8px;
+  z-index:-1;
+}
+.btn_more:hover {
+ background-color:  #0773B0;
+}
+
+.btn_more:hover::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn_more:hover::after {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.btn_more::before {
+  position: absolute;
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/more_plus.png) no-repeat;
+  filter: invert(100);
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+/* 제주도 렌트카 부분btn more prev,next버튼 새로지정*/
+.btn_more1 {
+  box-shadow: 2px 2px #000;
+  z-index: 2;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color:  #fafafa;
+  transition: 0.5s;
+  right: 0;
+  top: 7.4rem;
+}
+.btn_more1:hover {
+  box-shadow: none;
+ background-color:  #0773B0;
+}
+.btn_more1:hover::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn_more1::before {
+  position: absolute;
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(../img/more_plus.png) no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+/* 스와이퍼 좌우 버튼 부분 컬러지정이 안먹음.. */
+.rent .swiper-button-next, .rent .swiper-button-prev{
+  color:var(--sss,var(--ttt))!important;
+}
+
+
+
+section{
+  margin: auto;
+  width: 100%;
+}
+.inner {width: 1400px;
+margin: auto;}
+
+/* header */
+.header{
+  background: url(../img/dsaa.jpg) no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.header .inner{
+  width: 100%;
+  height: inherit;
+}
+.header .inner .logo{
+  width: 200px;
+  height: 80px;
+}.header .inner .logo img{
+  width: inherit;
+  height: inherit;
+}
+.header .inner .menu_inner{
+  width: 100%;
+  height:150px;
+  display: flex;
+    align-items: center;
+  background-color: #F9C153;
+}
+.header .inner .menu_bar{
+  width: 1400px;
+  font-size: 50px;
+  margin: auto;
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.header .inner .menu{
+  white-space: nowrap;
+  background-color: #232E5C;
+  border-radius: 8px;
+  font-size: 25px;
+  width: 800px;
+  height: 100px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header .inner .menu li a{  
+  font-family: 'JejuGothic';
+  display: block;
+  color:#fff;}
+.header .inner .menu li a:hover{
+  transition:0.3s ;
+   padding-bottom: 15px;
+  color: red;
+}
+
+.header .inner .header2{
+  white-space: nowrap;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 242px;
+  height: 94px;
+}
+.header .inner .header2 a{
+  color: #fff;
+}
+.header .inner .header2 a:hover{
+  color: #0773B0;
+}
+.header .inner .header2 a:hover img{
+  padding-bottom: 15px;
+}
+.header .inner .header2 #sc{
+}
+.header .inner .header2 #sc img{
+  transform: translate(15px,6px);
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+.search_bar{
+  transition: 3s;
+  display:none;
+  top: 0;
+  width: 1400px;
+  height: 150px;
+  color: #fff;
+  background-color: #232E5C;
+  position: absolute;
+}
+.search_bar p{
+  font-size: 47px;
+  transform: translate(52px, 36px);
+}
+.search_bar span{
+  cursor: pointer;
+  border: 1px solid #000;
+  transform: translate(0px,-55px);
+  float: right;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+}
+.search_bar span nav:nth-child(1)
+{
+  margin-top: 20px;
+  transform: rotate(45deg);
+  width: 44px;
+  height: 5px;
+  background-color: #000000;
+}
+.search_bar span nav:nth-child(2)
+{margin-top: -5px;
+  transform: rotate(-48deg);
+  width: 45px;
+  height: 5px;
+  background-color: #020000;
+}
+.search_bar input {
+  transform: translate(47%, -42%);
+  padding-left: 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 758px;
+  height: 80px;
+  margin: 0;
+}
+.search_bar a{
+  position: absolute;
+  right: 19%;
+  top: 26%;
+  width: 47px;
+  height: 47px;}
+
+.search_bar a img{
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/* 페이지 상세검색*/
+.header .inner .search{
+  transform: translate(2%,70%);
+  margin: auto;
+  box-shadow: 3px 3px 18px gray;
+  border-radius: 22px;
+  height: 306px;
+  font-size: 30px;
+  width: 694px;
+  background-color: #D9D9D9;
+}
+
+.header .inner .search ul{
+  font-size: 18px;
+  padding: 25px 0 0px 30px;
+  width: 566px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner .search ul li a{
+  color: #000;
+}
+/* .header .inner .search .target{
+
+  position: absolute;
+  border-bottom: 5px solid #0773B0;
+  transition: 0.5s;
+} */
+.header .inner .search ul li a.active{
+  border-bottom: 5px solid #0773B0;
+  color: #0773B0;
+}
+.header .inner .search ul li a:hover{
+  color: #0773B0;
+}
+.header .inner .search ul li:first-child
+{
+  font-family: 'JejuGothic';
+  font-weight: 700;
+}
+.header .inner .search ul li{
+}
+/* 제주숙소부분 */
+/* 추천 창 */
+.header .inner .search .content .suggestion{
+  z-index: 10;
+  right: -4%;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-top: 11px;
+  width: 728px;
+  height: 367px;
+  box-shadow: 3px 3px gray;
+  background-color: #fff;
+  position: absolute;
+  display: none;
+} 
+.header .inner .search .content .suggestion.actt{
+  display: block;
+}
+.header .inner .search .content .suggestion>p{
+  top: 18px;
+  left: 21px;
+  color: #585757;
+  position: absolute;
+  font-size: 20px;
+}
+.header .inner .search .content .suggestion .item_k{
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto auto ;
+}
+.header .inner .search .content .suggestion .item_k .item_s{
+  cursor: pointer;
+  margin: 16px;
+  display: flex;
+}
+.header .inner .search .content .suggestion .item_k .item_s img{
+  cursor: pointer;
+  margin-right: 15px;
+  width: 86px;
+  height: 70px;
+}
+.header .inner .search .content .suggestion .item_k .item_s a{
+  color: #000;
+  font-weight: 600;
+}
+.header .inner .search .content .suggestion .item_k .item_s:hover{
+  color: #0773B0;
+}
+/* act부분 */
+.header .inner .search .content.act{
+  display: block;
+}
+.header .inner .search .content #dot{
+  transform: translate(-68px,20px);
+  position: absolute;
+}
+.header .inner .search .content #dot img{
+  width: 40px;
+  height: 35px;
+}
+.header .inner .search .content .item1{
+}
+
+.header .inner .search .content .item_g,
+.header .inner .search .content .item_g1,
+.header .inner .search .content .item_g2{
+  margin-top: 20px;
+  width: 559px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+}
+.header .inner .search .content .item8,
+.header .inner .search .content .item5,
+.header .inner .search .content .item2{
+  font-family: 'JejuGothic';
+  text-align: center;
+  width: 331px;
+  display: flex;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+  border: none;
+  font-size: 41px;
+}
+.header .inner .search .content .item8 input,
+.header .inner .search .content .item5 input,
+.header .inner .search .content .item2 input{
+  font-family: 'JejuGothic';
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 17px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+   color: rgba(0,0,0); 
+   opacity: 1;
+   display: block;
+   background: url('../img/date2.png') no-repeat 90% 50%; 
+   background-size: cover;
+   filter: invert(70%);
+   width: 30px;
+   height: 25px;
+   border-width: thin;
+}
+.header .inner .search .content .item9 select,
+.header .inner .search .content .item6 select,
+.header .inner .search .content .item3 select{
+  font-family: 'JejuGothic';
+  text-align: center;
+  width: 100%;
+  border: none;
+  font-size: 21px;
+  height: inherit;
+  padding-left: 40px;
+}
+.header .inner .search .content .item9,
+.header .inner .search .content .item6,
+.header .inner .search .content .item3{
+  overflow: hidden;
+  width: 38%;
+  height: inherit;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.header .inner .search .content .item9 img,
+.header .inner .search .content .item6 img,
+.header .inner .search .content .item3 img{
+  transform: translate(31px,21px);
+  width: 35px;
+  pointer-events: none;
+  height: 30px;
+  position: absolute;
+}
+
+.header .inner .search .btn{
+  font-family: 'JejuGothic';
+  box-shadow: 3px 3px gray;
+  cursor: pointer;
+  font-size: 21px;
+  border: none;
+  width: 439px;
+  height: 71px;
+  background-color: #F9C153;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -39px;
+  left: 19%;
+}
+/* 패키지상품 */
+
+.header .inner .search .content .item4{
+}
+
+.header .inner .search .content .item4 input{
+  font-family: 'JejuGothic';
+      padding-left: 30px;
+      border: none;
+      font-size: 21px;
+      width: 530px;
+      height: 74px;
+      border-radius: 8px;
+}
+
+
+/* 렌트카 */
+.header .inner .search .content .item7 input,
+.header .inner .search .content .item4 input,
+.header .inner .search .content .item1 input{
+  font-family: 'JejuGothic';
+  padding-left: 30px;
+  border: none;
+  font-size: 21px;
+  width: 530px;
+  height: 74px;
+  border-radius: 8px;
+}
+.header .inner .search .content .item7{
+}
+
+
+
+
+
+/* 할인항공 */
+.header .inner .search .content{
+  display: none;
+  margin-top: 34px;
+  margin-left: 74px;
+}
+.header .inner .search div.content.act:nth-child(5){
+  margin: 38px 0 0 115px;
+}
+.header .inner .search .content .item10 {
+  border-radius: 10px;
+  width: 476px;
+  height: 70px;
+  background-color: #fff;
+}
+.header .inner .search .content .item10 select{
+  cursor: pointer;
+  text-align: center;
+  padding-left: 12%;
+  border: none;
+  font-size: 20px;
+  width: 47%;
+  height: inherit;
+  border-radius: 8px;
+}
+
+.header .inner .search .content .item10>img{
+  position: absolute;
+  width: 40px;
+  transform: translate(38px,14px);
+  height: 40px;
+}
+.header .inner .search .content .item10 .area2{
+  font-weight: 900;
+  padding-right: 31px;
+  width: 212px;
+  height: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  float: right;
+}
+.header .inner .search .content .item10 .area2 p{}
+.header .inner .search .content .item10 .area2 img{  
+  width: 33px;
+  height: 35px;
+}
+.header .inner .search .content .item10 .area2 p{font-size: 20px;}
+
+.header .inner .search .content .item_g3 .item11{
+  width: 512px;
+  margin: 19px 0px 0 -32px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 70px;
+}
+.header .inner .search .content .item_g3 .item11 input{
+  width: 35%;
+  font-family: 'JejuGothic';
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  padding: 26px;
+  height: 25px;
+}
+
+.header .inner .search .content .item_g3 .item11 input:nth-child(1){
+
+}
+
+/*section  main */
+.main{
+
+  width: 100%;
+  margin: auto;
+
+}
+#main{
+  position: relative;
+}
+.main_bg{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  background-color: #D7D7D7;
+}
+.main>.inner{
+  position: relative;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+.main .inner>p{
+  font-family: 'JejuGothic';
+  position: static;
+    z-index: -1;
+  color: #0773B0;
+  font-weight: 700;
+  font-size: 45px;
+}
+.main .inner ul{
+  font-family: 'JejuMyeongjo';
+  font-size: 30px;
+  width: 671px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .inner ul li{
+  cursor: pointer;
+}
+.main .inner ul li:hover{
+  color: #0773B0;
+}
+.main .inner ul li.action{
+  border-bottom:  5px solid #0773B0;
+  color: #0773B0;
+}
+.main .inner .main_sel{
+  overflow: hidden;
+  display:none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1350px;
+}
+.main .inner .main_sel.action_on{
+  display: flex;
+}
+.main .inner .main_sel.action_on2{
+  display: flex;
+}
+.main .inner .main_sel div{
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.main .inner .main_sel div::before{
+  top: 100%;
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  opacity: 30%;
+  content: '';
+  color: #000;
+  width: 400px;
+  height: 400px;
+  background-color: #585757;
+  transition: 0.5s;
+
+}
+.main .inner .main_sel div:hover span{
+  bottom: 20%;
+}
+.main .inner .main_sel div:hover::before{
+  top: 0;
+}
+
+.main .inner .main_sel div span>p{
+  font-size: 35px;
+}
+.main .inner .main_sel div span nav{
+  font-size: 30px;
+  width: 100%;
+}
+.main .inner .main_sel div span nav p:nth-child(2){
+  color: #ff0000;
+}
+
+.main .inner .main_sel a{}
+.main .inner .main_sel div a img{
+  width: 400px;
+  height: 400px;
+}
+.main .inner .main_sel.action_on{
+}
+.main .inner .main_sel #s1{
+  width: 500px;
+  display: none;
+}
+.main .inner .main_sel #s1 div{
+  border: 10px solid rebeccapurple;
+}
+.main .inner  #s2,
+.main .inner  #s3,
+.main .inner  #s4{
+}
+.main .inner .main_sel div{
+
+}
+.main .inner .main_sel div span{
+  pointer-events: none;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #fff;
+  transition: 0.5s;
+  bottom: -80%;
+  left: 10%;
+  position: absolute;
+  z-index: 3;
+  width: 80%;
+  height: 40%;
+}
+.main .inner .main_sel div span>p{
+  font-size: 35px;
+}
+.main .inner .main_sel div span nav{
+  font-size: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.main .inner .main_sel div span nav p:nth-child(2){
+  color: #ff0000;
+}
+
+
+.main .inner .main_sel div::before{
+  top: 100%;
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  opacity: 30%;
+  content: '';
+  color: #000;
+  width: 400px;
+  height: 400px;
+  background-color: #585757;
+  transition: 0.5s;
+}
+.main .inner .main_sel div:hover::before{
+  top: 0;
+}
+.main .inner .main_sel div:hover span{
+  bottom: 20%;
+}
+
+.main .inner .main_sel  a nav{
+  top: 0;
+  right: 0;
+  position: absolute;
+  width:100px;
+  height: 100px;
+  background-color: #0773B0;
+  border-radius:0 0 0 20px ;
+  font-size: 25px;
+  text-align: center;
+  line-height: 4;
+  color: #fff;
+}
+.main .inner #m1{
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.main .inner ul li.action2{
+  border-bottom:  5px solid #0773B0;
+  color: #0773B0;
+}
+/* banner */
+.banner{ 
+  margin: auto;
+  width: 1980px; 
+  height: 500px;
+}
+.banner .swiper-pagination-bullet{
+  opacity: 1;
+  transform: translate(530px,-20px);
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 253, 253);
+  border-radius: 0;
+}
+.banner .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,12px);
+}
+.banner .swiper-pagination-bullet-active{
+  background-color: lightgreen;
+  height: 65px;
+}
+.banner a img{
+  margin: 70px 0 0 290px;
+  width: 1400px;
+  height: 360px;
+}
+/* rent */
+.rent{
+  background-color: #F9C153;
+  display: flex;
+  align-items: center;
+  height: 800px;
+}
+.rent .inner{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 86%;
+}
+.rent .inner>a{
+  font-family: 'JejuGothic';
+  width: 272px;
+  margin: auto;
+  color: #232E5C;
+  font-size: 45px;
+  font-weight: 600;
+}
+.rent .inner ul{
+  font-family: 'JejuMyeongjo';
+  margin: auto;
+  width: 570px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.rent .inner ul li a{
+  font-size: 30px;
+  color: #000;
+}
+.rent swiper-container {
+  width: 100%;
+  height: 500px;
+}
+
+.rent swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #F9C153;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rent swiper-slide a{
+  margin-right: 30px;
+  width: 369px;
+  height: 480px;
+}
+.rent swiper-slide a img{
+  border-radius: 30px 30px 0 0 ;
+  width: 100%;
+ height: 270px;
+}
+.rent swiper-slide a:last-child{
+  margin: 0;
+}
+.rent swiper-slide nav{
+  background-color: #F1F1F1;
+  border-radius: 0 0 30px 30px;
+  height: 208px;
+  margin-top: -5px;  
+}
+.rent swiper-slide nav p{
+  padding-top: 30px;
+  font-size: 24px;
+  color: #000;
+}
+.rent swiper-slide nav p:nth-child(1){
+  font-weight: 600;
+}
+.rent swiper-slide nav p:nth-child(2){
+  padding-top: 10px;
+  color: #585757;}
+.rent swiper-slide nav p:nth-child(3){
+  color: red;
+}
+.rent .mySwiper1,
+.rent .mySwiper2,
+.rent .mySwiper3,
+.rent .mySwiper4
+{
+  display: none;
+}
+.rent .inner  ul .acc a{
+  font-weight: 600;
+  color: #232E5C;
+  border-bottom: 5px solid #232E5C;
+}
+.rent .inner  ul li a:hover{
+  color: #0773B0;
+}
+.rent .acc1{
+  display: block;
+}
+/* tour */
+.tour{
+  background-color: #D7D7D7;
+  height: 500px;
+}
+.tour .inner{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: inherit;
+  width: 1400px;
+}
+.tour .inner a{
+  border-radius: 30px;
+  width: 420px;
+  height: 253px;
+}
+.tour .inner a:hover{
+  transition: 0.2s;
+  box-shadow: 5px 5px black;
+  transform: translate(-10px,-10px);
+}
+.tour .inner a img{
+  width: 140px;
+  height: 152px;
+}
+.tour .inner a nav{
+
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tour .inner a nav span{
+  color: #fff;
+}
+.tour .inner a nav span p:nth-child(1){
+
+  font-family: 'JejuGothic';
+  font-size: 45px;
+  font-weight: 500;
+}
+.tour .inner a nav span p:nth-child(2){
+  font-size: 25px;
+}
+.tour .inner a nav span p:nth-child(2){}
+.tour .inner a:nth-child(1){
+  background-color:#5265CA ;
+}
+.tour .inner a:nth-child(2){
+  background-color:#54B358 ;
+}
+.tour .inner a:nth-child(3){
+  background-color: #A52BBA;
+}
+/* suggestion 추천관광지부분 */
+.suggestion1{
+  height: 500px;
+}
+.suggestion1 .inner{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+height: inherit;
+}
+.suggestion1 .inner .s_item{
+  font-family: 'JejuGothic';
+  position: relative;
+  color: #fff;
+  background-color: #F9C153;
+  width: 280px;
+  height: 331px;
+}
+.suggestion1 .inner .s_item p{
+  margin: 30px 0 10px 20px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.suggestion1 .inner .s_item span{
+  margin: 0 0 15px 10px;
+  width: 137px;
+  background-color: #fff;
+  display: block;
+  height: 5px;
+}
+.suggestion1 .inner .s_item .mc a{
+  color: #fff;
+  font-size: 30px;
+  margin-left: 15px;
+}
+.suggestion1 .inner .s_item .mc a:nth-child(1).chu,
+.suggestion1 .inner .s_item .mc a:nth-child(2).chu,
+.suggestion1 .inner .s_item .mc a:nth-child(3).chu,
+.suggestion1 .inner .s_item .mc a:nth-child(4).chu,
+.suggestion1 .inner .s_item .mc a:nth-child(5).chu{display: inline-block;}
+.suggestion1 .inner .s_item .mc a:nth-child(1),
+.suggestion1 .inner .s_item .mc a:nth-child(2),
+.suggestion1 .inner .s_item .mc a:nth-child(3),
+.suggestion1 .inner .s_item .mc a:nth-child(4),
+.suggestion1 .inner .s_item .mc a:nth-child(5){display: none;}
+.suggestion1 .inner .s_item .btn2{
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  height: 15px;
+  left: 31%;
+  bottom: 20px;
+  position: absolute;
+}
+.suggestion1 .inner .s_item .btn2 a{
+  text-shadow: 2px 2px #9b9898;
+  color: #fff;
+  font: 17px;
+}
+.suggestion1 .inner .s_item .btn2 nav{
+  left: 49%;
+  pointer-events: none;
+background-color: #fff;
+width: 2px;
+height: 16px;
+bottom: -4px;
+position: absolute;
+display: block;}
+.suggestion1 .inner .s_item .btn2 a:nth-child(1):hover{
+  transform: translate(-5px,0);
+  transition: 0.3s;
+}
+.suggestion1 .inner .s_item .btn2 a:nth-child(3):hover{
+  transform: translate(5px,0);
+  transition: 0.3s;
+}
+.suggestion1 .inner .s_item1,
+.suggestion1 .inner .s_item2,
+.suggestion1 .inner .s_item3,
+.suggestion1 .inner .s_item4,
+.suggestion1 .inner .s_item5{
+  width: 1000px;
+  height: 330px;
+}
+.suggestion1 .inner .s_item1.ac,
+.suggestion1 .inner .s_item2.ac,
+.suggestion1 .inner .s_item3.ac,
+.suggestion1 .inner .s_item4.ac,
+.suggestion1 .inner .s_item5.ac{
+  display: flex;
+}
+.suggestion1 .inner .s_item1{
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.suggestion1 .inner .s_item1 div{
+}
+.suggestion1 .inner .s_item1 div img{
+  width: 264px;
+  height: 115px;
+}
+.suggestion1 .inner .s_item1 div nav{
+  font-size: 17px;
+  width:inherit;
+  height: 150px;
+}
+.suggestion1 .inner .s_item1 div nav a{
+  color: #000;
+}
+.suggestion1 .inner .s_item1 div nav a:hover{
+  color: #0773B0;
+}
+.suggestion1 .inner .s_item1 div nav a:nth-child(1){
+  position: relative;
+  pointer-events: none;
+  margin-right: 10px;
+  display: inline-block;
+  font-weight: 600;
+}
+.suggestion1 .inner .s_item1 div nav a:nth-child(1)::before{
+  content: "";
+  pointer-events: none;
+  width: 2px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  display: block;
+  left: 108%;
+}
+.suggestion1 .inner .s_item1 div nav a:nth-child(2){margin-top: 20px;
+  display: inline-block;}
+.suggestion1 .inner .s_item1 div nav a:nth-child(3){
+width: 264px;
+height: 100px;
+display: block;
+margin-top: 25px;}
+.suggestion1 .inner .s_item2{
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.suggestion1 .inner .s_item2 div{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.suggestion1 .inner .s_item2 div img{
+  width: 264px;
+  height: 115px;
+}
+.suggestion1 .inner .s_item2 div a{
+  font-size: 17px;
+  color: 
+  #000;
+}
+.suggestion1 .inner .s_item2 div a:nth-child(2){
+  font-size: 25px;
+  font-weight: 700;
+}
+.suggestion1 .inner .s_item2 div p{
+  color: #49e634;
+}
+.suggestion1 .inner .s_item2 div a:hover{
+  color:#0773B0
+}
+.suggestion1 .inner .s_item2 div a:nth-child(2){}
+.suggestion1 .inner .s_item3{display: none;
+justify-content: space-evenly;
+align-items: center; }
+.suggestion1 .inner .s_item3 nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 252px;
+}
+.suggestion1 .inner .s_item3 nav a{
+  position: relative;
+  color: #000;
+  font-size: 20px;
+}
+.suggestion1 .inner .s_item3 nav:hover a{
+  color: #0773B0;
+}
+.suggestion1 .inner .s_item3 nav a:nth-child(1){
+  font-size: 22px;
+font-weight: 600;
+}
+.suggestion1 .inner .s_item3 nav #aco1 p{display: none;}
+/* text overflow hidden이 안먹음 */
+.suggestion1 .inner .s_item3 nav a:nth-child(2) p{  
+  overflow: hidden;
+  height: 190px;
+}
+
+.suggestion1 .inner .s_item3 nav a:nth-child(2){
+  color: #585757;
+}
+.suggestion1 .inner .s_item3 nav:hover a:nth-child(2){
+  color: #0773B0;
+}
+.suggestion1 .inner .s_item4{  
+  display:none;
+  justify-content: space-around;
+  align-items: center;
+}
+.suggestion1 .inner .s_item4 a{
+  color: #000;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 325px;
+  border: 1px solid rgb(184, 184, 184);
+}
+.suggestion1 .inner .s_item4 a:hover{
+  box-shadow: 3px 3px 3px gray;
+  color: #0773B0;
+}
+.suggestion1 .inner .s_item4 a p{}
+.suggestion1 .inner .s_item4 a p:nth-child(1){font-size: 25px;
+font-weight: 600;}
+.suggestion1 .inner .s_item4 a p:nth-child(2){font: 15px;}
+.suggestion1 .inner .s_item5{
+ display: none;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.suggestion1 .inner .s_item5 a{
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  width: 150px;
+  height: 150px;
+}
+.suggestion1 .inner .s_item5 a:hover{
+  color: #0773B0;
+}
+.suggestion1 .inner .s_item5 a img{
+  width: 100px;
+  height: 100px;
+}
+/* footer */
+.footer{
+  height: 500px;
+  background-color: #232E5C;
+}
+.footer .inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: inherit;
+}
+.footer .inner .left{
+}
+.footer .inner .left img{
+  width: 312px;
+  height: 101px;
+}
+.footer .inner .right{
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between ;
+  color: #fff;
+width: 1200px;
+  height: 288px;
+}
+.footer .inner .right .u1{
+  font-size: 25px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .inner .right .u2{
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .inner .right .u2 li:last-child{
+  margin-top: 55px;
+}
+.footer .inner .right ul li a{
+  color: #fff;
+}
